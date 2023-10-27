@@ -1,7 +1,9 @@
+import Header from "../components/Header";
+
 function Home() {
     return (
         <>
-        메인페이지
+            <Header />
         </>
     )
 }
