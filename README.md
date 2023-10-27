@@ -1,8 +1,8 @@
-# React + Vite
+# 영화 앱 만들기
+## TODO
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [x] 파일 초기화
+- [x] 기본 구조 셋팅
+- [ ] 메인, 서브 페이지 셋팅(테스트 데이터)
+- [ ] 스타일 작업
+- [ ] 헤더 작업 
