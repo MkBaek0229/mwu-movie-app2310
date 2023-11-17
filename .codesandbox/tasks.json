@@ -4,6 +4,14 @@
     {
       "name": "Install Dependencies",
       "command": "npm install"
+    },
+    {
+      "name": "d",
+      "command": "npm i react-router-dom"
+    },
+    {
+      "name": "npm i styled-components",
+      "command": "npm i styled-components"
     }
   ],
 
