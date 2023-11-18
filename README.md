@@ -8,7 +8,7 @@
 - [x] api 키 발급 관련 처리
 - [x] 헤더 작업 1차
 - [x] 헤더 작업 2차 
-- [ ] 헤더 작업 마무리 
+- [x] 홈 화면 구현 1차
 
 
 ## 의존 모듈
@@ -19,4 +19,6 @@ npm i react-router-dom
 # 스타일 컴포넌트  
 npm i styled-components
 
+# 슬라이드 쇼 
+npm i react-responsive-carousel
 ```

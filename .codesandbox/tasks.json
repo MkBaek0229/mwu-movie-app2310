@@ -12,6 +12,10 @@
     {
       "name": "npm i styled-components",
       "command": "npm i styled-components"
+    },
+    {
+      "name": "npm i react-responsive-carousel",
+      "command": "npm i react-responsive-carousel"
     }
   ],
 

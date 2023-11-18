@@ -1,10 +1,9 @@
-import Header from "../components/Header";
 import { data } from "../data/test";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function Movie() {
   return (
     <>
-      <Header />
       {data.results.map((movie) => (
         <ul key={movie.id}>
           <li>{movie.title}</li>

@@ -3,7 +3,9 @@ export const data = {
   results: [
     {
       adult: false,
-      backdrop_path: "/a2tys4sD7xzVaogPntGsT1ypVoT.jpg",
+      // backdrop_path는 이미지파일명?같은건데 앞에다 주소를 붙여줘야함
+      // https://image.tmdb.org/t/p/original/+jpg파일명
+      backdrop_path: "a2tys4sD7xzVaogPntGsT1ypVoT.jpg",
       genre_ids: [53, 35, 27, 80],
       id: 804150,
       original_language: "en",
