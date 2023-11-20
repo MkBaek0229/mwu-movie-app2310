@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./page/Home";
-import Movie from "./page/Movie";
 import Header from "./components/Header";
+import MovieList from "./page/MovieList";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Header />
       <Routes>
         <Route index element={<Home />} />
-        <Route path="movie" element={<Movie />} />
+        <Route path="movies/:type" element={<MovieList />} />
       </Routes>
     </BrowserRouter>
   );
