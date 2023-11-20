@@ -15,6 +15,8 @@
 - [x] Card 컴포넌트 작업
 - [x] 상세페이지 1차 작업
 - [x] 상세페이지 2차 작업
+- [x] 검색기능 개발
+
 ```bash
 # 라우터
 npm i react-router-dom
