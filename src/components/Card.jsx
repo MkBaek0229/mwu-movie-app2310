@@ -34,7 +34,10 @@ function Card({ movie }) {
               <SubTitle>
                 {movie.release_date} / ⭐️ {movie.vote_average}
               </SubTitle>
-              <Description>{movie.overview}</Description>
+              <Description>
+                {movie.overview.slice(0, 50) +
+                  "... 🙄다음 내용 궁금하다면 클릭"}
+              </Description>
             </Overlay>
           </Item>
         </Link>

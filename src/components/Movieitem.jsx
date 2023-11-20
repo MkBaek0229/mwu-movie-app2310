@@ -1,8 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 export default function MovieItem({ movie }) {
+  const navigate = useNavigate();
+
+  const onClickPoster = () => {
+    navigate("/movie/" + movie.id);
+  };
+
   return (
-    <Container>
+    <Container onClick={onClickPoster}>
       {/* 영화 사진 */}
       <ImgBox>
         <img
@@ -25,6 +32,7 @@ export default function MovieItem({ movie }) {
 // 부모요소를 position : relative로두면 그 자식요소중 position : absolute를 가진 요소는 부모영역안에서만 놀수있다.
 const Container = styled.div`
   position: relative;
+  cursor: pointer;
 `;
 
 const ImgBox = styled.div`
