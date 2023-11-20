@@ -2,10 +2,11 @@ import { useState, useEffect } from "react";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function Card({ movie }) {
   const [loading, setLoading] = useState(true);
-  // 1초면 데이터를 받아올것이라고생각하고 1초뒤 loading 을 false로 
+  // 1초면 데이터를 받아올것이라고생각하고 1초뒤 loading 을 false로
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -22,19 +23,21 @@ function Card({ movie }) {
           </SkeletonTheme>
         </Item>
       ) : (
-        <Item>
-          <Img
-            src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
-            alt="영화 포스트 사진"
-          />
-          <Overlay>
-            <Title>{movie.origin_title}</Title>
-            <SubTitle>
-              {movie.release_date} / ⭐️ {movie.vote_average}
-            </SubTitle>
-            <Description>{movie.overview}</Description>
-          </Overlay>
-        </Item>
+        <Link to={"/movie/" + movie.id}>
+          <Item>
+            <Img
+              src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
+              alt="영화 포스트 사진"
+            />
+            <Overlay>
+              <Title>{movie.origin_title}</Title>
+              <SubTitle>
+                {movie.release_date} / ⭐️ {movie.vote_average}
+              </SubTitle>
+              <Description>{movie.overview}</Description>
+            </Overlay>
+          </Item>
+        </Link>
       )}
     </Container>
   );
