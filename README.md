@@ -12,7 +12,7 @@
 - [x] MovieItem 컴포넌트 작업
 - [x] 메인 페이지 API 연동
 - [x] 서브페이지 라우팅, 페이지 작업
-- [ ] Card 컴포넌트 작업
+- [x] Card 컴포넌트 작업
 
 ## 의존 모듈
 ```bash
@@ -24,4 +24,8 @@ npm i styled-components
 
 # 슬라이드 쇼 
 npm i react-responsive-carousel
+
+# 로딩 효과
+npm i react-loading-skeleton
+
 ```

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
+import Card from "../components/Card";
 import { config } from "../data/constant";
 
 export default function MovieList() {
@@ -27,7 +28,7 @@ export default function MovieList() {
     <Container>
       <Title></Title>
       <Group>
-        {movies.map((movie) => <div key={movie.id}>{movie.title}</div>)}
+        {movies.map((movie) => <Card key={movie.id} movie={movie}></Card>)}
       </Group>
     </Container>
   );
