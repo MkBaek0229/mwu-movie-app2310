@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="movies/:type" element={<MovieList />} />
-        <Route path="movies/:id" element={<MovieDetail />} />
+        <Route path="movie/:id" element={<MovieDetail />} />
       </Routes>
     </BrowserRouter>
   );

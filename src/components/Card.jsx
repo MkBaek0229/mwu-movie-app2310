@@ -26,7 +26,7 @@ function Card({ movie }) {
         <Link to={"/movie/" + movie.id}>
           <Item>
             <Img
-              src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
+              src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
               alt="영화 포스트 사진"
             />
             <Overlay>
